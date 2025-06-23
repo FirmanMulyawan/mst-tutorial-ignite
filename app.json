@@ -1,0 +1,75 @@
+{
+  "name": "TestFirman",
+  "displayName": "TestFirman",
+  "expo": {
+    "name": "TestFirman",
+    "slug": "TestFirman",
+    "scheme": "testfirman",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/images/app-icon-all.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "newArchEnabled": false,
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*", "assets/images/*"
+    ],
+    "android": {
+      "icon": "./assets/images/app-icon-android-legacy.png",
+      "package": "com.testfirman",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png"
+      },
+      "allowBackup": false
+    },
+    "ios": {
+      "icon": "./assets/images/app-icon-ios.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.testfirman",
+      "privacyManifests": {
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
+          }
+        ]
+      },
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/app-icon-web-favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-localization",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/app-icon-android-adaptive-foreground.png",
+          "imageWidth": 300,
+          "resizeMode": "contain",
+          "backgroundColor": "#191015"
+        }
+      ]
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "84d7b0e9-f8aa-44c8-9c92-a52075a6e231"
+      }
+    }
+  },
+  "ignite": {
+    "version": "10.5.3"
+  }
+}
